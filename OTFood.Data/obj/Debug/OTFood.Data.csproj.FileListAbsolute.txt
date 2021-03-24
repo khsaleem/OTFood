@@ -1,0 +1,11 @@
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\OTFood.Data.dll
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\OTFood.Data.pdb
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\obj\Debug\OTFood.Data.dll
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\obj\Debug\OTFood.Data.pdb
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\OTFood.Data.dll.config
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\EntityFramework.dll
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\EntityFramework.xml
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\obj\Debug\OTFood.Data.csproj.CopyComplete
+C:\dev_DotNet\OTFood\OTFood\OTFood.Data\obj\Debug\OTFood.Data.csprojAssemblyReference.cache

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<OTFood.Data.Models.Restaurant>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>DI Test</h1>
+    <div>
+        There are @Model.Count() restaurants in the db.
+    </div>
+</div>
+
+<ul>
+    @foreach (var restaurant in Model)
+    {
+        <li>@restaurant.Name</li>
+    }
+</ul>

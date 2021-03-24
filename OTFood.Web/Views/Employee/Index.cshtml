@@ -1,0 +1,84 @@
+﻿@* Original Code
+    @model IEnumerable<OTFood.Data.Models.Employee>
+*@
+
+@model OTFood.Web.ViewModels.EmployeeListVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.EmployeeVM.?)*@
+
+            @Html.DisplayName("Restaurant")
+        </th>
+        <th>
+            @*    @Html.DisplayNameFor(model => model.Name) *@
+            @Html.DisplayName("Name")
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.PayRate) *@
+            @Html.DisplayName("Pay Rate")
+        </th>
+        <th>
+            @*   @Html.DisplayNameFor(model => model.BaseHours) *@
+            @Html.DisplayName("Base Hours")
+        </th>
+        <th>
+            @Html.DisplayName("Gross")
+        </th>
+        <th>
+            @*   @Html.DisplayNameFor(model => model.isManager) *@
+            @Html.DisplayName("Is Manager")
+        </th>
+        <th>
+            @Html.DisplayName("OT applicable")
+        </th>
+        <th></th>
+    </tr>
+
+    @*  Original Loop
+        @foreach (var item in Model) 
+    *@
+    @foreach (var item in Model.VmEmployees)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.RestaurantName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PayRate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BaseHours)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.gross)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.isManager)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.HasOvertime)
+    </td>
+    <td>
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.EmpID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.EmpID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.EmpID })
+    </td>
+</tr>
+    }
+
+</table>
